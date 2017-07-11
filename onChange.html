@@ -1,0 +1,26 @@
+<!-- using the onChange watches for events, and when I choose something or the original state changes it runs a function-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<select id="pickanimal" onchange="picker()">
+		<option value="cat">Cat
+ 		 <option value="dog">Dog
+ 		 <option value="mouse">Mouse
+</select>
+
+<p id="showbox"></p>
+
+
+<script>
+function picker() {
+    var x = document.getElementById("pickanimal").value;
+    document.getElementById("showbox").innerHTML = x;
+}
+</script>
+</body>
+</html>
